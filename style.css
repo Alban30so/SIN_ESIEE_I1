@@ -1,0 +1,35 @@
+body {
+    background-color: #080402;
+    }
+    a {
+    text-decoration: none;
+    color: #A9F4EA;
+    }
+    a:hover {
+    color: #53872A;
+    }
+    h1 {
+    background-color: #B9121B;
+    color: #ffffff;
+    font-weight: bold;
+    }
+    
+    h2 {
+    color: #00C3FE;
+    font-weight: bold;
+    }
+    text{
+        color: aliceblue;
+        font-weight:bold;
+    }
+    
+    p {
+    font-family: fantasy;
+    color: #000000;
+    text-align: center;
+    }
+     div {
+         color: #FFFFFF;
+         text-align: center;
+     }
+    body { text-align: center }
