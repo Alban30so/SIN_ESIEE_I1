@@ -77,11 +77,13 @@ var ball = {
         if (getDistance(l.x, l.y, ball.x, ball.y) + this.dy < ball.radius + l.h + ball.dy ) {
             ball.dx = -ball.dx
             test=2
+            bruit();
         }
         //collision de la raquette de droite.
         if (getDistance(r.x-20, r.y, ball.x, ball.y) + this.dy < ball.radius + r.h + ball.dy) {
             ball.dx = -ball.dx
             test=1
+            bruit();
         }
         if (ball.x == window.innerWidth/2){
             Gscore +=1
@@ -182,7 +184,15 @@ var score = {
         c.fillText(Gscore,window.innerWidth / 2 , window.innerHeight / 2 / 3);
     }
 }
+// musique du jeu
+var musique=new Audio('song.mp3');
 
+// son de rebond.
+function bruit(){
+    var bam=new Audio();
+    bam.src="BAM.mp3";
+    bam.play();
+}
 //fonction principale du jeu.
 function main() {
 
@@ -200,6 +210,7 @@ function main() {
     net.draw();
     score.draw();
     requestAnimationFrame(main)
+    musique.play();
 }
 
 main();
