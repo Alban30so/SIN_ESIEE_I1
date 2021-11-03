@@ -1,4 +1,4 @@
-
+//Le code source est récupéré d'un projet open source sur github. Ce code a été réadapté pour notre projet par la suite.
 // Select The canvas element in our html5 Document
 var canvas = document.querySelector("canvas");
 
